@@ -1,13 +1,15 @@
 //import express from "express"
 //import cors from "cors"
 
-const express = require ('express')
-const cors = require ('cors')
+const express = require ('express');
+const cors = require ('cors');
+const http = require ('http');
+const socketConfig = require ('./socket');
 const pool = require("./db");
 // require is a built in function to include external modules
 
 const app = express ();
-
+const server = http.createServer(app);
 app.use (cors());
 app.use (express.json());
 
