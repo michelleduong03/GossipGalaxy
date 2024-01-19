@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-
 //useState and useEffect from react module, useState- creates variable state message
 // useEffect to call API when component mounts
+import ChatComponent from "./components/chat";
 
 function App() {
   const [message, setMessage] = useState("");
